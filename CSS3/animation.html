@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes Mamun {
+            0%{
+                left:0;
+
+            }
+            100%{
+                left:800px;
+
+            }
+        }
+        .bounce{
+            height:122px;
+            width:750px;
+            background-color: azure;
+            border:2px solid gray; 
+        }
+        .ball{
+            height:85px;
+            width:85px;
+            background-image:linear-gradient(red,orange,yellow,green,rgb(15, 47, 231),rgb(55, 131, 230),purple);
+            border-radius: 50px;
+        }
+        .bounce:hover .ball{
+            animation: Mamun 10s ease-in-out 1s infinite alternate ;
+        }
+    </style>
+</head>
+<body>
+    <div class="bounce">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

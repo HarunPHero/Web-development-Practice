@@ -1,0 +1,11 @@
+.first{
+    width:400px;
+    height:200px;
+    border:4px solid black;
+}
+.second{
+    width:400px;
+    height:200px;
+    border:4px solid black;
+    overflow:scroll;
+}

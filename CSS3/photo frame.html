@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-album</title>
+</head>
+<body>
+    <style>
+        .photo-frame{
+            height:225px;
+            width:300px;
+            border: 10px solid green ;
+            border-radius: 10px;
+            position: relative;
+            margin: 2%;
+            overflow: hidden;
+        }
+        .photo-frame .photo img{
+            width:300px;
+        }
+        .photo-frame:hover .photo img{
+            transform:rotate(-360deg);
+            transition: transform 2s;
+        }
+        .photo-details{
+            position: absolute;
+            height:225px;
+            width:300px;
+            top:0;
+            display: none;
+
+
+        }
+        .photo-frame:hover .photo-details{
+            display: block;
+            background-image: linear-gradient(rgba(255, 254, 251, 0.767),rgb(255, 255, 255));
+        }
+        .photo-frame:hover .photo-details h1{
+            color: rgb(0, 0, 0);
+            background-color:rgb(0, 225, 255);
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .photo-frame:hover .photo-details p{
+            color: rgb(0, 0, 0);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+        }
+
+.photo-album{
+    display:flex;
+    flex-wrap: wrap;
+      
+    
+}
+h1:hover{
+    background-image: linear-gradient(red,orange,yellow);
+}
+    </style>
+    <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">My photo book</h1>
+   <section class="photo-album">
+    <a href="https://photos.google.com/album/AF1QipNb_k1L1gYRnwK-qspSXlCLIohhRMuax3O--ppt"><div class="photo-frame">
+        <div class="photo"
+        ><img src="https://lh3.googleusercontent.com/2ncLM8tIEwnXRpiSwiq8Q8fkw4gmjQ1x1YX3aMBpxVBj5f8cWy5NIQFg9Qr8SdO_u8TW9y2ZiHkIMocJV9jbPvSZlBNbdRSygnKY2gfN8R4r-qZRU9Egm-kEXYsPRJ8B9vCFw7TrlsqGgU49l7IqzGIcuYAcyQTX_wYObPFlnrMaklNxPel9P8NLj56LdCQtfwzh40NAzyiyeTLjpDJdIaKaWeeVpb6wlccXQBJebG7ceHkxH-eLWlUI6FQ6e5bqtxM9riPLgngXpydrs-JHTyP_IBUT1UeCtDPKcb48v00KUBO0PyDjuKUvO_PaL70koGpkT775Xdav5gjZxdlsr7g1BYXAiimO-O2wAGlYUXWTT6orSvHRYprXmSPFKEV40UEAKNNpSWtoHJItlvaeOmkx2eZtce-b7hSahuTizv7J0grQuUpLkSX3723qAuWcNIvlzjVp4Py8Twsz0PbBAbBlUsoVZ2FithJE5mjv8lG38S8aPdfHQcO3PDVWFg5KoxjLyYyA9ErSEr5b7R09tphwllWBe2N7_M8vSmxM9NeIMkM-tPHpncxb8SFDPT5WKAZqdcjOg52wnLJUHA-veqrdgZSRCavM4eL7MCUhgv4GNs2qxl0-lpSliybRe5lqg56yeuKIP2hdzCD1LNAiqXY4F93OnPtsXgD72Zf8GgBaeIbWbxxrCjhJ5-G4oGtqiig--05juqQzrsySs2wutVZT=w858-h643-no?authuser=0" alt=""></div>
+        <div class="photo-details">
+            <h1>Eid-ul-fitar day-2021🌙🌙</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, est mollitia. Officia id totam nesciunt molestiae unde quaerat quae quidem.</p>
+        </div>   
+    </div>
+</a>
+    <a href="https://photos.google.com/album/AF1QipNnnj-KC7fpdbigTnRq2OGSk6aagmDbD6YLMt0L"><div class="photo-frame">
+        <div class="photo"
+        ><img style="height: 225px;"src="https://lh3.googleusercontent.com/OPFKvpwIQd17B2Q4PSfl1k5DmpPDujiKWXglg2vVvYdPqYvGvQa4lFEf4f8QYuoU9FUcpxqiTXQk4gmfCsEsO9ABbAukhiAvlG-yq2k3ly59MhRL37jQ6ZSrL2YL-hX7aCdWm_4qEqG9ZKnQu71qWkSIQonW84H4ICJjkNK69bwUUdWXULEitaBgyJiGyaiIrQz_yGVywsbLCjP1nB_ILbxpCLqMq_xA64cX617IGzTkFIj0kj6alFvWXSTkseMt84iPgFqGW-Enum7XwbfClvG1s93Mky7KDGEgzyYiB7thhOVwncXiHxYoDmm7N3Rfzm6T3G3tw1z2EPBoDU_9_sG2ajvrSpIeDaEG91BSN9hIKnI_emQqjOo9wDRjoqHUjnnAr_9mfP4FD4D9r8ix2Cvjnc2Foyn3Csmo_JWmLViAJFQARWUNDDA3GSX7UxmvsVzGqBE68lFkM3615mCx4qofqqDzH30DOBOIWBqqFRiEHtxnO8riU0jhp-FD3xOgjP-yiXdyT_rWb1_2yLX3phzHQwxf_pCHecnClkFP9v-_UCAUfDjukVL7oSfKcPVCHalrqYbp0G60L2l6izJ2nTAa6Oc_9MXOHckHo1xunLmhpTbMCEnIwn_SjyjAMpzTSVIp5WCu2AlxYE3xbyb2MExYaLwqYrqyk5VyPtsecGyLLy9R_Zq07PKfEV1mOulmVAx8hH54U2Xbhv_NCRxh7_IK=w1024-h576-no?authuser=0" alt=""></div>
+        <div class="photo-details">
+            <h1>Trip from grandmother home-2020</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, est mollitia. Officia id totam nesciunt molestiae unde quaerat quae quidem.</p>
+        </div>   
+    </div>
+    </a>
+    <a href="https://photos.google.com/album/AF1QipP3PyfRzjs3ELVmimxAsxZw96_sz1Igea3QqALJ"><div class="photo-frame">
+    <div class="photo"
+    ><img style="height: 225px;"src="https://lh3.googleusercontent.com/yIt5PIWUPhEhAGZm7DJ-YU4aMDnnv-VlndJHZHhBHkag-RC0N5tUg0BT_tP7ebt1vpxznZmPmFfepObLZJJL-A3UpqTyQN6W-zGk2AincikWTRV8YB1iKPO-aiuB8FGXTvqddlqucG9vrai8BvsM5S6T62zu-3FDfNIF0BT4YT6uWSi-fUDWd9Up0CWaGcUztwr8XFGOymY6zsg1UBNnFpqFn8SxEojCHNkltFf7tOLNctx3ZoYTUafVUAyqEO-tyDQ6eGFSx-JlIWO83ozZcLAvH8HK0lm_4aye1Q7-QcuhzEcW6BoLHCQXy5cEKB3vOye20ZFvIjQZE08XUj8h1Jio3d6lmm5STypyNkVF9noEMgLmscZEdwV-3yKS77CFOmc5vtmQe9JYWIc6Jlr6kpcjv5Z4NRIXW6wYtm9GAn_lfQglP-x8VwBdpG8IJ76AhTyMjZGNKycJ3kRwbVGpXLh6MjF0K0sMRnMLM-ZPEhZcVvyCFmihLxGWmsG4G1SUci818vc2Afv_X3xRydInYcV0j30KxQTA-n7EsUzNAa9iZsrpX5XTL0ozH3kupoJtFix__oOmy0RgZLACaldwE8Onu8-fPOEnG8lQWX-1pUOXLP1NCkuE96YAKH-5MegMC_4uJgIpOE19pAT6bCIZvkeMtMe0FxZqVdMKwhtErTJBZxzu4NpzcScBwpRs4HkDE57ODdVa_kML8pDkz-crfvvo=w486-h273-no?authuser=0" alt=""></div>
+    <div class="photo-details">
+        <h1>Panchagharh trip in 21 February-2021</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, est mollitia. Officia id totam nesciunt molestiae unde quaerat quae quidem.</p>
+    </div>   
+</div>
+</a>
+<a href="https://photos.google.com/album/AF1QipNnnj-KC7fpdbigTnRq2OGSk6aagmDbD6YLMt0L"><div class="photo-frame">
+<div class="photo"
+><img src="https://lh3.googleusercontent.com/ZzqM0mNB6rXRWR7nDNMKuDZJ9XdzjIEJrYAfT-0GfPCcx_U4tME_edK0KOmrF2YdIlXlpUn_z2P0SRHR8FAvD6Tnm5KHYzZhHGwohab2lKVHh3xSHUpe0z7M1YlOoqghIsjgQvZcrULsq6LZ_vkz1emzbjbzeif6RcnyK9fPh6DiwbWl5_fu7QYKHEox_s_w8I7J8IIi4nW5VxlpuBsBL4Y677flVCpQTnd9G1LnmRFGvtkQRA9GbRYtvoBNttXdVZuWoJDZpdOrP6U8GAvzmPBgnsME8DQwOTnQBiVgsJn0yzWgXfQyM_574o4oLi9_wPWiHTfrGWiMV5MvJNsNBdVAm20htHNCgCeEQgKk0dVW1kKD4pEly82m74DDH6cTaF_JMNEbImfpPfAUtENO0oulbGNwQ3kkDewXLqwijVL9__FwJVtvvX3GrnVjFQqR4k_asiSZ5cHqB7QstpM34LFt1F33dU95RuNqEAWHA4cjLxcw8u8qZ7Cb3WnQ_yN8-cVDyWQqsekaoqtLTwmvGD6f6mBkubpzBlsobHlcZ100sZz0UJwhpbSdVGsnyuYAiTYZb0-iE8lIXLWEYgWJcaTMNuxzbuxDFV1nKM1WCcfSTO-V5dKFQwK3cHyK8hzElNWlfplYWrByWE1F_mWTb7FrkPSOsKZ_uweS6x91R28C5Xf9l1TJ54J4o7UCdVz-oqipLkM31RznWFNzrTGSRRaP=w858-h643-no?authuser=0" alt=""></div>
+<div class="photo-details">
+    <h1>Picnic in our house-2020</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, est mollitia. Officia id totam nesciunt molestiae unde quaerat quae quidem.</p>
+</div>   
+</div>
+</a>
+<a href="https://photos.google.com/album/AF1QipMO_45xmF2E528Jf9yYfurQnPrDSjrDEogEhiKN"><div class="photo-frame">
+<div class="photo"
+><img src="https://lh3.googleusercontent.com/vGkXPOHzKE1uA4BRzFzcGUe_qO7iMJuJ6x6gWdHhzRIrTjqikM5X1IqC4OaN931XosV72bMiCXM8S6LAH5uu5g-DA4MdA7CPZFCGjucepWDW0NiQG9mgzIgeaqxMBZi_99ls9ePXs-T7laDsQNS2Xs4AYb86W9ZGrWWD-xSEmT37hgA9rbCyPTSBFYkyFGSm7SWC9Jomc8EBa3_dGFMXdZ_SP5IwJP1TNIQ3-ICLit5WYahmKhEhLVcveORR__7U0MabAA7O9rVHgbnfFGAousMNL9WilhMZMsntdyrQCSh3onJ95y7qxODxvmtZtCv1TZ9-eVnqtxwzMaCSB18X5yXrLLxzi-wG5NOtw1Wqldboi6g5EuHnBp1MajzeodHkc70kmaqP-7RLIhKptOjUcIEnPJ_18T1Rx7kWQDE0BAXRfSLyd3olPlXxesEFomF3TYfGFDytvtVb_Cc-Atera7J2371JwHciEbhSNuWuoIYY46vWFGiCmn--z4A5-jNQfSamcpmBvAnGmw5qFzwNpfplIhYctxu1lZ3Ush_bDif1DpnH41X--VTGOoaypa6sWfQVeChX6ZJj3175uaKPfNJ2oesa9ezFOpkTdn-FAd_aKXM4XSCYOzm2Nm9MiyNkq5fOQgQtrAcHdpXPSIq1i3sEr4oJ59-n2r665s6mjMMaWo17Ik0AvLNi2vpPl47uNUn4cg2HHtWdKLjnqyOGCwGp=w858-h643-no?authuser=0" alt=""></div>
+<div class="photo-details">
+<h1>Trip-2021</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, est mollitia. Officia id totam nesciunt molestiae unde quaerat quae quidem.</p>
+</div>   
+</div>
+</a>
+
+     
+</section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onmousemove="handleClick()">Md. Zubaer Al Mamun</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla ad unde incidunt rem velit impedit exercitationem! Unde nihil aliquam nostrum eaque, consequatur error debitis aspernatur voluptatibus officia aut. Vero nostrum repellat dicta dolores sunt porro minus odio hic consequuntur.</p>
+    
+
+            <!-- another rule -->
+            <button id = "button-1">sadiq</button>
+            <button id = "button-2">Jahanara</button>
+            <button id = "lastPerson">Harun</button>
+            <button id = "lastPerson-2">Murshedul, Apon</button>
+
+<div> 
+    <h1>My list</h1>
+    <ul id = "ul1">
+        <li class="item">Item-1</li>
+        <li class="item">Item-2</li>
+        <li class="item">Item-3</li>
+        <li class="item">Item-4</li>
+        <li class="item">Item-5</li>
+    </ul>
+<button id= "new">Add new item </button>
+</div>
+           
+
+    <script>
+        function handleClick(){
+            console.log('Hi I am Mamun')
+        }
+
+        function handleClick2() {
+            document.body.style.color = 'Orange';
+            document.body.style.fontFamily = 'Roboto, sans-serif';
+            console.log("Hi, I'm sadiq. mamun's Brother")
+            
+        }
+
+        // var items = document.getElementsByClassName('item');
+        // for (let i = 0; i < items.length; i++){
+        //     var item = items[i];
+
+        //    item.addEventListener('click', function(event) {
+        //         event.target.parentNode.removeChild(event.target)
+               
+        //    })
+          
+        // }
+        document.getElementById('new').addEventListener('click', function(event) {
+            var itemPar = document.getElementById('ul1')
+            var newEle = document.createElement('li');
+            newEle.innerText = 'Item'
+            itemPar.appendChild(newEle)
+            
+        })
+        document.getElementById('ul1').addEventListener('click', function(event) {
+            // console.log(this, event.target)
+            event.target.parentNode.removeChild(event.target)
+            
+        })
+
+        //another rule element
+      document.getElementById('lastPerson').addEventListener('click', function handleClick3() {
+            document.body.style.color = 'red'
+            document.body.style.fontFamily = 'cursive'
+            console.log("Hi, I'm Harun. mamun's father")
+            
+        });
+        document.getElementById('button-2').addEventListener('click', function handleClick4() {
+            document.body.style.color = 'green';
+            document.body.style.fontFamily = 'fantasy'
+            console.log("Hi, I'm Jahanara. mamun's mother")
+            
+        })
+        document.getElementById('lastPerson-2').addEventListener('click', function handleClick5() {
+            document.body.style.color = 'gray';
+            document.body.style.fontFamily = 'Roboto, sans-serif'
+            console.log("Hi, I'm Murshedul. mamun's best freind.")
+            console.log( "I'm Apon. I'm also mamun's freind")
+            
+        })
+
+        
+        var button1 = document.getElementById('button-1')
+
+            button1.addEventListener('click', handleClick2)
+            // button1.onclick = handleClick2;
+            
+            
+    </script>
+</body>
+</html>
