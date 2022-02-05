@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>Explore API</h1>
+</body>
+<script>
+    const user = {
+        Name:'Mamun',
+        Work:'Programming',
+        LPL:['HTML','CSS','JAVASCRIPT'],
+        Software:'Visual Studio code',
+
+    }
+    const strigify = JSON.stringify(user);
+    console.log(strigify);
+    const parse = JSON.parse(strigify);
+    console.log(parse);
+    
+</script>
+</html>
