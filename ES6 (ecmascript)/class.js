@@ -11,5 +11,3 @@ const Student1 = new Student(1, "Mamun");
 const Student2 = new Student(2, "Murshedul");
 const Student3 = new Student(3, "Sadiq")
 console.log(Student1.name, Student2.id, Student3.name);
-
-const  
